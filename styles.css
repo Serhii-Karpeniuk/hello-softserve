@@ -47,6 +47,7 @@ nav {
   background-position: center;
   text-align: center;
   padding: 40px;
+  position: relative; /* Додати позицію relative */
 }
 
 .back-img-p {
@@ -54,6 +55,10 @@ nav {
   font-size: 20px;
   font-weight: bold;
   font-family: 'Bauhaus 93', sans-serif;
+  position: absolute; /* Додати позицію absolute */
+  bottom: 10px; /* Встановити відступ вниз */
+  left: 50%; /* Вирівняти по центру горизонтально */
+  transform: translateX(-50%); /* Зсув вліво на половину ширини */
 }
 
 /* Оновлення стилів для підвалу */
