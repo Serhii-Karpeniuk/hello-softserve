@@ -1,70 +1,86 @@
-/* Обнулити стилі для тіла сторінки */
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Зробити фоновий колір повнорозмірним */
 body {
-  background-color: #808080;
-  font-family: sans-serif;
+    background-color: #808080;
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 5px;
 }
 
-/* Зробити контейнер гнучким та центрованим */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+h1 {
+
+    color: #121212;
+    text-align: center;
+
 }
 
-/* Оновлення стилів для тексту */
-h1, p {
-  color: #121212;
-  text-align: center;
+p {
+    color: #121212;
+    text-align: center;
+    font-size: 22px;
 }
 
-/* Оновлення стилів для навігації */
+
+
 nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     right: auto;
+     left: auto;
+     margin: 20px auto;
+    
+    background-color: #fff;
+    background-size: 100%;
 }
 
 .nav-link {
-  padding: 10px;
-  text-decoration: none;
-  color: #121212;
-  font-weight: bold;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #121212;
+    margin: 0 auto;
+    font-weight: bold;
+}
+    
+
+.nav-link:hover {
+    background-color: #fff;
+    opacity: 0.6;
 }
 
-/* Оновлення стилів для зображення */
+/* image */
+.image {
+    width: 100%;
+    height: auto;
+}
+
 .back-img {
-  background-image: url("https://ldaily.ua/wp-content/uploads/2017/01/logo_SoftServe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 40px;
-  position: relative; /* Додати позицію relative */
+    background-image: url("https://ldaily.ua/wp-content/uploads/2017/01/logo_SoftServe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
 }
 
 .back-img-p {
-  color: #121212;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Bauhaus 93', sans-serif;
-  position: absolute; /* Додати позицію absolute */
-  bottom: 10px; /* Встановити відступ вниз */
-  left: 50%; /* Вирівняти по центру горизонтально */
-  transform: translateX(-50%); /* Зсув вліво на половину ширини */
+    color: #121212;
+    text-align: end;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 80px;
+    padding-top: 4s0px;
+    font-family: Bauhaus 93;
 }
 
-/* Оновлення стилів для підвалу */
+
+
 .footer {
-  text-align: center;
-  background-color: #fff;
-  height: 50px;
-  line-height: 50px;
-}
+    position: absolute;
+    bottom: 30;
+    left: 10;
+    right: 10;
+    text-align: center;
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+    width: 1000px;
+    margin-top: -30px;
+} 
