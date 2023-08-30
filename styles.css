@@ -1,105 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #808080;
-    font-family: sans-serif;
-    margin: 0 auto;
-    width: 100%;
-    padding: 5px;
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
 }
 
-h1, p {
-    color: #121212;
-    text-align: center;
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 20px auto;
-    background-color: #fff;
-    background-size: 100%;
-    margin-bottom: 125px;
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
 
-.nav-link {
-    padding: 0 10px;
-    text-decoration: none;
-    color: #121212;
-    font-weight: bold;
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.nav-link:hover {
-    background-color: #fff;
-    opacity: 0.6;
+.gallery::after {
+  content: "";
+  width: 350px;
 }
-
-.image {
-   
-    width: 100%;
-    height: auto;
-}
-
-.back-img {
-    background-image: url("https://ldaily.ua/wp-content/uploads/2017/01/logo_SoftServe.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 700px;
-    
-}
-
-.back-img-p {
-    color: #121212;
-    text-align: end;
-    font-size: 30px;
-    font-weight: bold;
-    margin-right: 80px;
-    padding-top: 40px;
-    font-family: "Bauhaus 93", sans-serif;
-}
-
-.footer {
-    position: absolute;
-    bottom: 30px;
-    left: 10px;
-    right: 10px;
-    text-align: center;
-    background-color: #fff;
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    margin-top: -30px;
-}
-
-
-
-/* Media Queries */
-@media screen and (max-width: 1200px) {
-    body {
-        font-size: 56px;
-    }
-    /* Adjust other styles as needed */
-}
-
-@media screen and (max-width: 998px) {
-    body {
-        font-size: 46px;
-    }
-    /* Adjust other styles as needed */
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 28px;
-    }
-    /* Adjust other styles as needed */
-}
-
-@media screen and (max-width: 576px) {
-    body {
-        font-size: 24px;
-    }
-    /* Adjust other styles as needed */
-}
-
 
 
