@@ -1,34 +1,22 @@
+/* Загальні стилі */
 body {
-    background-color: #808080;ґ
+    background-color: #808080;
     font-family: sans-serif;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
     padding: 5px;
 }
 
-h1 {
-
+h1, p {
     color: #121212;
     text-align: center;
-
 }
-
-p {
-    color: #121212;
-    text-align: center;
-    font-size: 22px;
-}
-
-
 
 nav {
-     display: flex;
-     justify-content: space-between;
-     position: relative;
-     right: auto;
-     left: auto;
-     margin: 20px auto;
-    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px auto;
     background-color: #fff;
     background-size: 100%;
 }
@@ -37,17 +25,14 @@ nav {
     padding: 0 10px;
     text-decoration: none;
     color: #121212;
-    margin: 0 auto;
     font-weight: bold;
 }
-    
 
 .nav-link:hover {
     background-color: #fff;
     opacity: 0.6;
 }
 
-/* image */
 .image {
     width: 100%;
     height: auto;
@@ -66,23 +51,143 @@ nav {
     font-size: 30px;
     font-weight: bold;
     margin-right: 80px;
-    padding-top: 4s0px;
-    font-family: Bauhaus 93;
+    padding-top: 40px;
+    font-family: "Bauhaus 93", sans-serif;
 }
-
-
 
 .footer {
     position: absolute;
-    bottom: 30;
-    left: 10;
-    right: 10;
+    bottom: 30px;
+    left: 10px;
+    right: 10px;
     text-align: center;
     background-color: #fff;
     height: 50px;
     line-height: 50px;
-    width: 1000px;
+    width: 100%;
     margin-top: -30px;
+}
+
+/* Медіа-запити */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 48px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+    nav {
+        margin: 10px auto;
+    }
+    .nav-link {
+        padding: 0 5px;
+        font-size: 18px;
+    }
+    .back-img {
+        height: 350px;
+    }
+    .back-img-p {
+        font-size: 24px;
+        margin-right: 40px;
+        padding-top: 20px;
+    }
+    .footer {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    body {
+        font-size: 40px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 16px;
+    }
+    nav {
+        margin: 10px auto;
+    }
+    .nav-link {
+        padding: 0 5px;
+        font-size: 16px;
+    }
+    .back-img {
+        height: 300px;
+    }
+    .back-img-p {
+        font-size: 20px;
+        margin-right: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 24px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+    }
+    nav {
+        margin: 10px auto;
+    }
+    .nav-link {
+        padding: 0 5px;
+        font-size: 14px;
+    }
+    .back-img {
+        height: 250px;
+    }
+    .back-img-p {
+        font-size: 18px;
+        margin-right: 10px;
+        padding-top: 20px;
+    }
+    .footer {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 20px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 12px;
+    }
+    nav {
+        margin: 5px auto;
+    }
+    .nav-link {
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .back-img {
+        height: 200px;
+    }
+    .back-img-p {
+        font-size: 16px;
+        margin-right: 5px;
+        padding-top: 10px;
+    }
+    .footer {
+        bottom: 5px;
+    }
 }
 
 
