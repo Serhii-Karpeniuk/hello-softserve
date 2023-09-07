@@ -1,44 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
-      <fieldset>
-        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-      </fieldset>
-      <fieldset>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
-        <label for="terms-and-conditions">
-          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-        </label>
-      </fieldset>
-      <fieldset>
-        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </select>
-        </label>
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-        </label>
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
-  </body>
-</html>
+<section class="trending_products">
+	<div class="trending_container">
+		<span class="trending_title">
+			<h1>Trending Products</h1>
+		</span>
+		<span>
+			<img class="trending_image" src="img/trending-products/bone_trending-products.svg" alt="illustration">
+		</span>
+		<span class="trending_subtitle">Top-selling items and popular picks by our customers. Check them now!</span>
+	</div>
+	<button class="carousel__direction"><</button>
+	<div class="carousel_container">
+		<div class="carousel__trending-products">
+			<img class="carousel__image--trending-products" src="img/trending-products/dora pet carrier.png" width="200px" alt="Dora Pet Carrier">
+			<a class="trending__products--title" href="#">DORA Pet Carrier</a>
+			<p class="trending__products--price">$23,00</p>
+			<button class="trending__products--button">Add to Cart</button>
+		</div>
+		<div class="carousel__trending-products">
+			<img class="carousel__image--trending-products" src="img/trending-products/dora metal pet brush.png" width="200px" alt="Dora Metal Pet Brush">
+			<a class="trending__products--title" href="#">DORA Metal Pet Brush</a>
+			<p class="trending__products--price">$15,00</p>
+			<button class="trending__products--button">Add to Cart</button>
+		</div>
+		<div class="carousel__trending-products">
+			<img class="carousel__image--trending-products" src="img/trending-products/kitten's heaven set.png" width="200px" alt="Kitten's Heaven Set">
+			<a class="trending__products--title" href="#">Kitten's Heaven Set</a>
+			<p class="trending__products--price">$12,00</p>
+			<button class="trending__products--button">Add to Cart</button>
+		</div>
+	</div>
+</section>
